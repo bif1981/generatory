@@ -22,3 +22,12 @@
 # ab
 # bc
 # abc
+
+def all_variants(__len__):
+    for character in range(len(__len__)):
+        yield __len__[character]
+
+
+a = all_variants("abc")
+for i in a:
+    print(i)
